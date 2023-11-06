@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.rizkym.homemade.ui.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_category"
+        android:name="com.rizkym.homemade.ui.CategoryFragment"
+        android:label="@string/category"
+        tools:layout="@layout/fragment_favorite" />
+
+    <fragment
+        android:id="@+id/navigation_area"
+        android:name="com.rizkym.homemade.ui.AreaFragment"
+        android:label="@string/area"
+        tools:layout="@layout/fragment_area" />
+
+    <fragment
+        android:id="@+id/navigation_favorite"
+        android:name="com.rizkym.homemade.ui.AreaFragment"
+        android:label="@string/favorite"
+        tools:layout="@layout/fragment_favorite" />
+</navigation>
